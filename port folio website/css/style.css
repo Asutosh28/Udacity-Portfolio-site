@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    background: url(http://www.yoga213.com.au/wp-content/uploads/17-ocean-beach-sand-sky-wallpaper.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    
+}
+
+img.place {
+  width: 100%;
+  height: 100%;
+}
+
+.image img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.header img {
+    float: left;
+    clear:left;
+    width:100px;
+    height:100px;
+}
+
+.center {
+    width: 100%;
+    
+}
+.header {
+    margin-bottom: 2em ;  
+    width:100%;
+    overflow:hidden;
+    border-bottom-style: solid;
+    border-width: thick;
+    border-color: gray;
+}
+.Hd {
+    float: right;
+    text-align: right;
+}
+
+.container {
+   margin: 1em;
+}
+
+.container p{
+    text-align: justify;
+    font-style: oblique;
+    font-weight: bold;
+ }
+
+.brief{
+    background-color: transparent;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    
+}
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0.2em;
+}
+
+.Jaganatha{
+  width: 28%;
+  height: 15%;
+  padding-right: 2em;
+}
+
+.Konark {
+  width: 28%;
+  height: 15%;
+  padding-right: 2em;
+}
+
+.Puri_Sea_Beach{
+  width: 28%;
+  height: 15%;
+  padding-right: 2em;
+}
+
+.Dhauli {
+  width: 28%;
+  height: 15%;
+  padding-right: 2em;
+}
+
+.caves {
+  width: 28%;
+  height: 15%;
+  padding-right: 2em;
+}
+
+.Chilika {
+  width: 28%;
+  height: 15%;
+  padding-right: 2em;
+}
+
+
+.color-swatches {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    border-style: solid;
+    border-color: black;
+    margin-right: 1em;
+    text-align: center;
+  }
+  .color-swatches li {
+      flex: 30%;
+      text-align: center;
+    }
+
+    .swatch {
+        min-height: 7em;
+    }
+
+  @media (min-width: 800px) {
+        .color-swatches {
+            justify-content: space-around;
+        }
+
+        .color-swatches li {
+            flex-basis: 20%;
+        }
+
+        .swatch {
+            min-height: 9em;
+        }
+    }
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+    }
+
+    .header {
+        grid-column:  1/ 3;
+        margin-bottom: 2em;
+        margin-top: 0;
+    }
+
+   
+    .color-swatches {
+        order: -1;
+        grid-row: 2 / 5;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        margin-top: 0;
+    }
+    .color-swatches li {
+        flex: 0 1 auto;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+    .footer{
+        grid-column: 1/3;
+    }
+    .center {
+        grid-row: 4/5;
+        order: 3;
+    }
+}
+
+@media (min-width: 1250px) {
+    .container {
+        margin: 2em auto;
+        max-width: 1250px;
+    }
+
+    .center {
+        justify-content: space-between;
+    }
+    .places article {
+        flex-basis: calc(100% / 3 - 2em);
+    }
+}
+
+@media (max-width: 450px){
+    .container p{
+          font-size: x-small;
+      }
+}
+.footer {
+    text-align: center;
+    width: 1270px;
+    background-color: transparent;
+    margin-top: 2em;
+    width: 100%;
+   
+}
